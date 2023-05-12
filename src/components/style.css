@@ -46,9 +46,21 @@
     border-radius: 4px;
     transition: all 0.2s ease-in-out;
 }
-.nav-links-mobile{
-    display:none; 
-}
+
+/* .nav-links-mobile{
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin:auto;
+    border-radius: 4px;
+    width: 80%;
+    background: #01959a;
+    text-decoration: none;
+    color:#fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+} */
 
 button{
     padding: 0.5rem;
@@ -103,10 +115,12 @@ button:hover{
         width: 100%;
         font-size: 1.2rem;
         padding: 2rem 0;
+       
     }
     .nav-links:hover{
-        background: #01959a;
+        background-color: #01959a !important;
         transition: none;
+        
     }
     button{
         display: none;
@@ -130,6 +144,7 @@ button:hover{
     .menu-icons{
         display: block;
         cursor: pointer;
+      
     }
     .menu-icons i{
         font-size: 1.3rem;

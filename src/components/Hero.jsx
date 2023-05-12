@@ -1,14 +1,16 @@
 import "./HeroStyles.css";
 
-function Hero() {
+function Hero(props) {
     return(
         <>
-        <div className="hero">
-            <img alt="HerpImg" src="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"/>
+        <div className={props.cName}>
+            <img alt="HerpImg" src={props.heroImg}/>
         <div className="hero-text">
-            <h1>Your Journey Your Story</h1>
-            <p> Choose Your Favourite Destination</p>
-            <a href="/" > Travel Plan </a>
+            <h1>{props.title}</h1>
+            <p> {props.text} </p>
+            <a href={props.url} className={props.btnClass}>
+                 {props.buttonText}
+            </a>
         </div>
         </div>
         </>

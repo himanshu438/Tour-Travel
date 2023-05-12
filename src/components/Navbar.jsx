@@ -5,11 +5,16 @@ import { Link } from "react-router-dom";
 
 
 
+
 class Navbar extends Component{
+   
     state = { clicked: false };
      handleClick = () => {
         this.setState({ clicked: !this.state.clicked})
      }
+    
+    
+   
     render(){
         return( 
             <nav className="NavbarItems">
@@ -29,7 +34,8 @@ class Navbar extends Component{
                     </li>
                     )
                 })}
-                <button>Sign Up</button>
+                
+             <button className="nav-links-mobile" href="/signup">Sign Up</button>
                 </ul>
             </nav>
         )
